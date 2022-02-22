@@ -1,6 +1,6 @@
 {
 	"name": "@mingull/mingullcli",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "My first CLI",
 	"main": "src/index.js",
 	"bin": "bin/MingullCLI",
