@@ -4,18 +4,19 @@ import ncp from 'ncp';
 import path from 'path';
 import { promisify } from 'util';
 import execa from 'execa';
-import Listr from 'listr';
+import { Listr } from 'listr2';
 import { projectInstall } from 'pkg-install';
 
 const access = promisify(fs.access);
 const copy = promisify(ncp);
 
-async function createDir(options) {
-    const result = await execa("mkdir", [options.dirName], { cwd: options.targetDirectory });
+async function createDir(options, task) {
+    const result = await execa("mkdir", [options.name], { cwd: options.targetDirectory });
     if (result.failed) {
         return Promise.reject(new Error('Failed to create directory'));
     }
-    options.targetDirectory += `/${options.dirName}`;
+    options.targetDirectory += `/${options.name}`;
+    task.title = "Created directory"
     return;
 }
 
@@ -63,15 +64,10 @@ export async function createProject(options) {
         process.exit(1);
     }
 
-    if (options.type == "Discord") {
-        console.error(`${chalk.red.underline.bold('WIP')} Discord not ready`);
-        process.exit(1);
-    }
-
     const tasks = new Listr([
         {
             title: 'Creating directory',
-            task: () => createDir(options)
+            task: (ctx, task) => createDir(options, task)
         },
         {
             title: 'Copy project files',

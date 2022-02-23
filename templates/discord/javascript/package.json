@@ -1,18 +1,19 @@
 {
-    "version": "1.0.0",
-    "description": "",
-    "main": "src/app.js",
-    "scripts": {
-        "start": "node .",
-        "dev": "nodemon ."
-    },
-    "keywords": [],
-    "author": "Mingull",
-    "license": "ISC",
-    "dependencies": {
-        "dotenv": "^16.0.0"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.15"
-    }
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "Mingull",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
 }
