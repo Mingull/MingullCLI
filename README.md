@@ -11,7 +11,7 @@ This CLI is made to easily start an express.js *__(and more)__* projects
 
 ## Installation
 
-Install my-project with npm
+Install MingullCLI with npm
 
 ```bash
 npm install -g @mingull/mingullcli
@@ -20,14 +20,15 @@ npm install -g @mingull/mingullcli
 ## Documentation
 
 ```bash
-mingullcli <project_name> <project_type> <project_template>
+mingullcli [<type> <command> <name> <template>] [--git] [--install] [--yes]
 ```
 
 | Argument | Value     | Description                |
 | :-------- | :------- | :------------------------- |
-| `project_name` | `string` | What the name of your project is |
-| `project_type` | `Express\|Discord` | What the type of the project is  |
-| `project template` | `Javascript\|Typescript` | What the type of the project is  |
+| `type` | `Express\|Discord` | What the type of the project is  |
+| `command` | `New\|Generate` | What the type of the project is  |
+| `name` | `string` | What the name of your project is |
+| `template` | `Javascript\|Typescript` | What the type of the project is  |
 | `--git\|-g` | `string` | __Optional__. If a git should be initialized  |
 | `--install\|-i` | `string` | __Optional__. If all dependencies should be installed  |
 | `--yes\|-y` | `string` | __Optional__. If all prompts should be skipped  |
