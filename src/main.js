@@ -67,7 +67,7 @@ export async function createProject(options) {
     const tasks = new Listr([
         {
             title: 'Creating directory',
-            task: (ctx, task) => createDir(options, task)
+            task: ({ task }) => createDir(options, task)
         },
         {
             title: 'Copy project files',

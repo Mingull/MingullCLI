@@ -1,46 +1,45 @@
 {
-  "name": "@mingull/mingullcli",
-  "version": "0.2.0",
-  "description": "My first CLI",
-  "main": "src/index.js",
-  "bin": {
-    "mingullcli": "bin/MingullCLI"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "cli",
-    "MingullCLI"
-  ],
-  "author": "Mingull",
-  "license": "MIT",
-  "dependencies": {
-    "arg": "^5.0.1",
-    "chalk": "^4.1.2",
-    "esm": "^3.2.25",
-    "execa": "^5.1.1",
-    "inquirer": "^8.2.0",
-    "listr": "^0.14.3",
-    "listr2": "^4.0.4",
-    "ncp": "^2.0.0",
-    "pkg-install": "^1.0.0",
-    "prompts": "^2.4.2"
-  },
-  "files": [
-    "bin/",
-    "src/",
-    "templates/"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mingull/MingullCLI.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Mingull/MingullCLI/issues"
-  },
-  "homepage": "https://github.com/Mingull/MingullCLI#readme"
+	"name": "@mingull/mingullcli",
+	"version": "0.2.0",
+	"description": "My first CLI",
+	"main": "src/index.js",
+	"bin": {
+		"mingullcli": "bin/MingullCLI"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"cli",
+		"MingullCLI"
+	],
+	"author": "Mingull",
+	"license": "ISC",
+	"dependencies": {
+		"arg": "^5.0.1",
+		"chalk": "^4.1.2",
+		"esm": "^3.2.25",
+		"execa": "^5.1.1",
+		"listr": "^0.14.3",
+		"listr2": "^4.0.4",
+		"ncp": "^2.0.0",
+		"pkg-install": "^1.0.0",
+		"prompts": "^2.4.2"
+	},
+	"files": [
+		"bin/",
+		"src/",
+		"templates/"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mingull/MingullCLI.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Mingull/MingullCLI/issues"
+	},
+	"homepage": "https://github.com/Mingull/MingullCLI#readme"
 }

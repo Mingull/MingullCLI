@@ -105,13 +105,6 @@ async function promptForMissingOptions(options) {
         console.error(`${chalk.red.bold('WIP')} Discord not ready`);
         process.exit(1);
     }
-    // return {
-    //     ...options,
-    //     template: options.template || answers.template,
-    //     git: options.git || answers.git,
-    //     dirName: options.dirName || answers.dirName,
-    //     type: options.type || answers.type
-    // };
 }
 export async function cli(args) {
     let options = parseArgumentsIntoOptions(args);

@@ -11,7 +11,7 @@ This CLI is made to easily start an express.js *__(and more)__* projects
 
 ## Installation
 
-Install MingullCLI with npm
+Install my-project with npm
 
 ```bash
 npm install -g @mingull/mingullcli
@@ -33,6 +33,6 @@ mingullcli [<type> <command> <name> <template>] [--git] [--install] [--yes]
 | `--install\|-i` | `string` | __Optional__. If all dependencies should be installed  |
 | `--yes\|-y` | `string` | __Optional__. If all prompts should be skipped  |
 
-## License
+## Authors
 
-[MIT](https://choosealicense.com/licenses/mit/)
+- [@Mingull](https://www.github.com/Mingull)
